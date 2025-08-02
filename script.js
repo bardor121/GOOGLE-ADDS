@@ -78,10 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 3.  End with a friendly call to action, inviting them to contact the agency to implement the solution.
 
                 User's process: "${userInput}"`;
-
+cosnt xxx="hi"
                 let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
                 const payload = { contents: chatHistory };
-                const apiKey = "AIzaSyBaXQVGGCCg-w_quSov_c7sE5Tn-TbiRR0"; // API Key Added
+                const apiKey = "XXX; // API Key Added
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
                 
                 const response = await fetch(apiUrl, {
@@ -283,3 +283,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
